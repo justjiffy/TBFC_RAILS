@@ -13,3 +13,20 @@
  *= require_tree .
  *= require_self
  */
+
+@import "bootstrap";
+
+header {
+  padding: 10px 0;
+}
+.max-1000 {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: block;
+}
+
+@include media-breakpoint-up(sm) {
+  .header {
+    border-bottom: 15px solid black;
+  }
+}
