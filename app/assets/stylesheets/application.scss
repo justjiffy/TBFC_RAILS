@@ -26,6 +26,9 @@ header {
 }
 
 @include media-breakpoint-up(sm) {
+  header {
+    padding: 0;
+  }
   .header {
     border-bottom: 15px solid black;
   }
