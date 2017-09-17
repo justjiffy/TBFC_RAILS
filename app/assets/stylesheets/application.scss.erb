@@ -46,8 +46,21 @@ body {
   white-space: pre-wrap;
 }
 .btn-outline-dark:hover,
-.btn-outline-dark:active, .btn-outline-dark.active, .show > .btn-outline-dark.dropdown-toggle {
-  background-color: #e8872a !important;
+.btn-outline-dark:active,
+.btn-outline-dark:focus,
+.btn-outline-dark.active, .show > .btn-outline-dark.dropdown-toggle {
+  background: white;
+  color: black;
+  font-weight: bold;
+  border-bottom: 5px solid #e8872a !important;
+  cursor: pointer;
+  outline: 0px !important;
+  box-shadow: 0 0 0 0 !important;
+}
+.navbar-collapse {
+  form:focus {
+    outline: 0px !important;
+  }
 }
 .navbar {
   padding: 0.5rem 0;
