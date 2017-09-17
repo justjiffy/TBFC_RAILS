@@ -26,6 +26,8 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   display: block;
+  position: static;
+  overflow: scroll;
 }
 .expand-button {
   width: 100%;
@@ -45,6 +47,9 @@ body {
   border-radius: 0px;
   white-space: pre-wrap;
 }
+.container-fluid > div {
+  background: white;
+}
 .btn-outline-dark:hover,
 .btn-outline-dark:active,
 .btn-outline-dark:focus,
@@ -58,12 +63,14 @@ body {
   box-shadow: 0 0 0 0 !important;
 }
 .navbar-collapse {
+  padding-top: 10px;
   form:focus {
     outline: 0px !important;
   }
 }
 .navbar {
   padding: 0.5rem 0;
+  padding-right: 0px;
 }
 .navbar-toggler {
   border-radius: 0;
@@ -74,6 +81,13 @@ body {
   }
 }
 @include media-breakpoint-up(md) {
+  .nav-fix {
+    padding-right: 0;
+  }
+  .page-content {
+    padding-left: 0px;
+    padding-top: 15px;
+  }
   .btn {
     text-align: left;
   }
@@ -85,8 +99,16 @@ body {
   }
   @include media-breakpoint-up(lg) {
     header {
-      transform: scale(0.9);
+      .nav-fix {
+        padding: 0.5rem 0;
+        padding-right: 0px;
+      }
       margin-bottom: -15px;
+
+      img {
+        transform: scale(0.9);
+        text-align: left;
+      }
     }
   }
 }
