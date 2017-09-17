@@ -15,12 +15,15 @@
  */
 
 @import "bootstrap";
-
+html {
+  background-image: url(<%= asset_path 'shared/bg.jpg' %>);
+}
 header {
   padding: 5px 0;
 }
-.max-1000 {
-  max-width: 1000px;
+body {
+  height: 100vh;
+  max-width: 1200px;
   margin: 0 auto;
   display: block;
 }
@@ -34,17 +37,43 @@ header {
 .button_to {
   width: 100%!important;
   margin-bottom: 3px;
+  border-radius: 0;
 }
 
+.btn {
+  border: 0px !important;
+  border-radius: 0px;
+  white-space: pre-wrap;
+}
 .btn-outline-dark:hover,
 .btn-outline-dark:active, .btn-outline-dark.active, .show > .btn-outline-dark.dropdown-toggle {
   background-color: #e8872a !important;
 }
+.navbar {
+  padding: 0.5rem 0;
+}
+.navbar-toggler {
+  border-radius: 0;
+}
 @include media-breakpoint-up(sm) {
   header {
-    padding: 15px 0;
+    padding: 15px 0 0 0;
+  }
+}
+@include media-breakpoint-up(md) {
+  .btn {
+    text-align: left;
+  }
+  .navbar {
+    border-right: 15px solid black;
   }
   .header {
     border-bottom: 15px solid black;
+  }
+  @include media-breakpoint-up(lg) {
+    header {
+      transform: scale(0.9);
+      margin-bottom: -15px;
+    }
   }
 }
