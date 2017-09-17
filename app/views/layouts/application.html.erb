@@ -14,12 +14,12 @@
         <div class='col-sm-2 d-none d-sm-block'>
           <%= image_tag 'shared/logo.jpg', class: 'img-fluid' %>
         </div>
-        <div class='col-xs-12 col-sm-10 header'>
-          <%= image_tag 'shared/header.jpg', class: 'img-fluid' %>
+        <div class='col-xs-12 col-sm-10'>
+          <%= image_tag 'shared/header.jpg', class: 'img-fluid header' %>
         </div>
       </header>
       <div class='row'>
-        <div class='col-12 col-md-3 nav-fix'>
+        <div class='col-12 col-md-2 nav-fix'>
           <nav class='navbar navbar-expand-md'>
             <button class='navbar-toggler expand-button' type='button' data-toggle='collapse' data-target="#navbarExpanded">
               TAKE ME TO...
@@ -34,7 +34,7 @@
             </div>
           </nav>
         </div>
-        <div class='page-content col-12 col-md-9'>
+        <div class='page-content col-12 col-md-10'>
           <%= yield %>
         </div>
       </div>

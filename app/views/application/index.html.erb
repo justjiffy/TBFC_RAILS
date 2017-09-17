@@ -1,1 +1,48 @@
-<h1>Application Index</h1>
+<div class="row">
+  <div class="col-12 tagline">
+    <i>Since 1961, Southern California's Favorite Bluegrass, Old-Time and Folk Music Festival</i>
+  </div>
+</div>
+
+<div class="row">
+  <div id="carouselExampleSlidesOnly" class="carousel slide col-12" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <%= image_tag 'application/carousel_image1.jpg', class: 'd-block w-100' %>
+        <div class="carousel-caption d-none d-md-block">
+          <h3>May 20, 2018</h3>
+          <p>Save the Date!</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <%= image_tag 'application/carousel_image2.jpg', class: 'd-block w-100' %>
+        <div class="carousel-caption d-none d-md-block">
+          <h3>Free Events, All  year long!</h3>
+          <p>Learn more...</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <%= image_tag 'application/carousel_image3.jpg', class: 'd-block w-100' %>
+        <div class="carousel-caption d-none d-md-block">
+          <h3>GET INVOLVED!</h3>
+          <p>Become a volunteer, register as a vendor and get ready for this year's artwork contest!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr class="row" />
+
+<div class="row">
+  <div class="col-sm-12 col-md-4">
+    <%= button_to 'BUY TICKETS', tickets_path, class: "btn main-button", :method => :get %>
+  </div>
+  <div class="col-sm-12 col-md-4">
+    <%= button_to 'CONTESTANT REGISTRATION', contestants_path, class: "btn main-button", :method => :get %>
+  </div>
+  <div class="col-sm-12 col-md-4">
+    <%= button_to 'GET INVOLVED', getinvolved_path, class: "btn main-button", :method => :get %>
+  </div>
+</div>
+

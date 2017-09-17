@@ -14,105 +14,19 @@
  *= require_self
  */
 
-@import "bootstrap";
-html {
-  background-image: url(<%= asset_path 'shared/bg.jpg' %>);
-}
-header {
-  padding: 5px 0;
-}
-body {
-  height: 100vh;
-  max-width: 1200px;
-  margin: 0 auto;
-  display: block;
-  position: static;
-  overflow: scroll;
-}
-.expand-button {
+.tagline {
+  text-align: center;
+ }
+
+.main-button {
   width: 100%;
+  padding: 2rem 0;
+  color: white;
   background: black;
   text-align: center;
-  color: white;
-  font-weight: bold;
-}
-.button_to {
-  width: 100%!important;
-  margin-bottom: 3px;
-  border-radius: 0;
-}
-
-.btn {
-  border: 0px !important;
-  border-radius: 0px;
-  white-space: pre-wrap;
-}
-.container-fluid > div {
-  background: white;
-}
-.btn-outline-dark:hover,
-.btn-outline-dark:active,
-.btn-outline-dark:focus,
-.btn-outline-dark.active, .show > .btn-outline-dark.dropdown-toggle {
-  background: white;
-  color: black;
-  font-weight: bold;
-  border-bottom: 5px solid #e8872a !important;
   cursor: pointer;
-  outline: 0px !important;
-  box-shadow: 0 0 0 0 !important;
-}
-.navbar-collapse {
-  padding-top: 10px;
-  form:focus {
-    outline: 0px !important;
-  }
-}
-.navbar {
-  padding: 0.5rem 0;
-  padding-right: 0px;
-}
-.navbar-toggler {
-  border-radius: 0;
-}
-@include media-breakpoint-up(sm) {
-  header {
-    padding: 15px 0 0 0;
-  }
-}
-@include media-breakpoint-up(md) {
-  .nav-fix {
-    padding-right: 0;
-  }
-  .page-content {
-    padding-left: 0px;
-    padding-top: 15px;
 
-    > * {
-    margin:   20px;
-}
-  }
-  .btn {
-    text-align: left;
-  }
-  .navbar {
-    border-right: 15px solid black;
-  }
-  .header {
-    border-bottom: 15px solid black;
-  }
-  @include media-breakpoint-up(lg) {
-    header {
-      .nav-fix {
-        padding: 0.5rem 0;
-        padding-right: 0px;
-      }
-      margin-bottom: -15px;
-
-      img {
-        transform: scale(0.9);
-        text-align: left;
-      }
-    }
+  &:hover {
+    background: orange;
   }
 }

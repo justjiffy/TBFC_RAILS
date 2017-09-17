@@ -13,5 +13,7 @@ Rails.application.routes.draw do
 
   get 'event/', to: 'event#index', as: 'event'
 
+  get 'get_involved/', to: 'get_involved#index', as: 'getinvolved'
+
   resources :users
 end
