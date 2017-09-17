@@ -3,33 +3,38 @@
   <head>
     <title>TBFC - Topanga Banjo Fiddle Contest</title>
     <%= csrf_meta_tags %>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body class="container-fluid max-1000">
-      <header class="row no-gutters">
-        <div class="col-sm-2 d-none d-sm-block">
+  <body class='container-fluid max-1000'>
+      <header class='row no-gutters'>
+        <div class='col-sm-2 d-none d-sm-block'>
           <%= image_tag 'shared/logo.jpg', class: 'img-fluid' %>
         </div>
-        <div class="col-xs-12 col-sm-10 header">
+        <div class='col-xs-12 col-sm-10 header'>
           <%= image_tag 'shared/header.jpg', class: 'img-fluid' %>
         </div>
       </header>
-      <div class="row">
-        <div class="col-12 col-md-2">
-          <nav class="nav flex-column">
-            <%= link_to 'HOME', root_path, class: 'nav-item nav-link' %>
-            <%= link_to 'EVENT INFO', event_path, class: 'nav-item nav-link' %>
-            <%= link_to 'FREE CONCERTS', concerts_path, class: 'nav-item nav-link' %>
-            <%= link_to 'TICKETS', tickets_path, class: 'nav-item nav-link' %>
-            <%= link_to 'CONTESTANTS', contestants_path, class: 'nav-item nav-link' %>
-            <%= link_to 'ABOUT', about_path, class: 'nav-item nav-link' %>
+      <div class='row'>
+        <div class='col-12 col-md-3'>
+          <nav class='navbar navbar-expand-md'>
+            <button class='navbar-toggler expand-button' type='button' data-toggle='collapse' data-target="#navbarExpanded">
+              TAKE ME TO...
+            </button>
+            <div class="collapse navbar-collapse flex-column" id="navbarExpanded">
+              <%= button_to 'HOME', root_path, class: 'btn btn-outline-dark btn-block', :method => :get %>
+              <%= button_to 'EVENT INFO', event_path, class: 'btn btn-outline-dark btn-block', :method => :get %>
+              <%= button_to 'FREE CONCERTS', concerts_path, class: 'btn btn-outline-dark btn-block', :method => :get %>
+              <%= button_to 'TICKETS', tickets_path, class: 'btn btn-outline-dark btn-block', :method => :get %>
+              <%= button_to 'CONTESTANTS', contestants_path, class: 'btn btn-outline-dark btn-block', :method => :get %>
+              <%= button_to 'ABOUT', about_path, class: 'btn btn-outline-dark btn-block', :method => :get %>
+            </div>
           </nav>
         </div>
-        <div class="col-12 col-md-10">
+        <div class='col-12 col-md-9'>
           <%= yield %>
         </div>
       </div>

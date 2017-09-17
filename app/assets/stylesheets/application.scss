@@ -17,17 +17,32 @@
 @import "bootstrap";
 
 header {
-  padding: 10px 0;
+  padding: 5px 0;
 }
 .max-1000 {
   max-width: 1000px;
   margin: 0 auto;
   display: block;
 }
+.expand-button {
+  width: 100%;
+  background: black;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
+.button_to {
+  width: 100%!important;
+  margin-bottom: 3px;
+}
 
+.btn-outline-dark:hover,
+.btn-outline-dark:active, .btn-outline-dark.active, .show > .btn-outline-dark.dropdown-toggle {
+  background-color: #e8872a !important;
+}
 @include media-breakpoint-up(sm) {
   header {
-    padding: 0;
+    padding: 15px 0;
   }
   .header {
     border-bottom: 15px solid black;
