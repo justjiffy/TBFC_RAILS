@@ -1,2 +1,213 @@
-<h1>Contestants#index</h1>
-<p>Find me in app/views/contestants/index.html.erb</p>
+<div class='row'>
+  <div class='col-12'>
+    <h1>CONTESTANT REGISTRATION</h1>
+  </div>
+</div>
+<hr class='row'>
+
+<div class='row'>
+  <div class="col-sm-12 col-md-4">
+    <%= button_to 'REGISTER', registration_path, class: "btn main-button", :method => :get %>
+  </div>
+  <div class="col-sm-12 col-md-4">
+    <%= button_to 'FAQ', contestants_path(:anchor => "faq"), class: "btn main-button", :method => :get %>
+  </div>
+  <div class="col-sm-12 col-md-4">
+    <%= button_to 'JUDGING CRITERIA', contestants_path(:anchor => "judge"), class: "btn main-button", :method => :get %>
+  </div>
+</div>
+
+<div class="row" name="register" id="register">
+  <div class='col-12'>
+    <h3>Which type of contest are you registering for?</h3>
+    <p>If you plan to register for more than one contest, select your primary contest category first.</p>
+  </div>
+  <ul>
+    <li><%= link_to 'DANCE', contestants_path, class: 'btn main-btn' %></li>
+    <li><%= link_to 'INSTRUMENTAL', contestants_path, class: 'btn main-btn' %></li>
+    <li><%= link_to 'SINGING', contestants_path, class: 'btn main-btn' %></li>
+    <li><%= link_to 'BAND', contestants_path, class: 'btn main-btn' %></li>
+</div>
+
+<div class="row" name="faq" id="faq">
+  <div class="col-12">What are the recent changes?
+
+  The most significant are the addition of Flatfoot (Buck) Dancing competition, Online contestant registration and the Intermediate Stage which will host all Intermediate level competition. Winners will play on the main stage after the competition and awards, as the Beginners have in the past.
+
+  Where do I get more information about the Flatfoot Dancing Competition?
+
+  See the Dance Page or click HERE
+
+  Who may enter the contest?
+
+  The contest is open to virtually anyone that can compete in one of the defined categories. The beginning, intermediate and advanced levels allow fair competition among those at a similar level. With the exception of those professional acts appearing on the main stage the day of the contest, we invite all to participate and, if you don’t win this year, you will raise the level of your performance and be better prepared for next year.
+
+  What is considered an instrument category?
+
+  An Instrument Category is considered Fiddle, Traditional Banjo, Bluegrass Banjo, Mandolin, Flat-picking Guitar and Other Instruments.
+
+  Are electric instruments allowed?
+
+  Only acoustic instruments are allowed in all contest categories. No electrified instruments of any kind are permitted.
+
+  What instruments fall into the OTHER INSTRUMENTS Category?
+
+  All instruments other than those listed above. Examples of Other Instruments are therefore Dulcimer, Dobro, Bass and Finger-Style Guitar to name a few. If there are a sufficient number of entries, Finger-Style Guitar will have its own category.
+
+  What is the best way to Register ?
+
+  You may register in two different ways:
+
+  Online Registration - This is by far the BEST way to register. Go to our website (TopangaBanjoFiddle.org), click on Contestants / Registration, complete the appropriate form and hit "SUBMIT."
+
+  Mail-in - Go to our website (TopangaBanjoFiddle.org), print (very) and complete the appropriate form, fill it in (very legibly) and mail it to the Registrar.
+  Can I email or fax my contestant registration form?
+
+  There is no FAX machine available, please use Online Registration or print and mail the registration form.
+
+  Which entries are accepted if a category fills up?
+
+  All registrations will be ordered by date sent/submitted or postmark, and the earliest will have priority.
+
+  Why do I need to list my back-up players and include their addresses and phone numbers?
+
+  Knowing who the back-up players are is important for the Registrar to know should they be backing-up contestants on all the playoff stages and the Main Stage. For example, in the morning, a back-up player cannot be at both the Fiddle Playoffs or the Singing Playoffs and the Main Stage. This especially applies to our many teachers who are backing-up their students. Additionally, should a back-up player win a prize, we would require their contact information.
+
+  It is also important that we know who the backup players are for judging purposes, the correct spelling of their names, and their addresses in case they win. Winners lists are also published and sent to music stores and newspapers, and are posted on our web site. We have had back up winners whose name wasn’t provided on the form and we had to track down the contestant for the information.
+
+  How will the morning competitions conflict with my being a back-up player?
+
+  IMPORTANT: Bands and Singing Contestants will compete in a preliminary competition. The finalists from each category will compete on the Main Stage in the AFTERNOON and new contestant numbers will be assigned at On-site Registration when contestant checks-in with Finalist Certificate from the preliminary stage. Please make your commitments to being a Back-up VERY CAREFULLY. Remember, your backup cannot be in two places at the same time.
+
+  How many times may a back-up player be judged?
+
+  A person may back-up any number of players, but may only be judged once in each Backup category. The "Best Backup Guitar" and "Best Other Backup Instrument" categories are only judged on the Main Stage and not on any of the Playoff stages. Contestants advancing to the main stage from the Playoff Stages may add a Best Backup Judging request when checking in at the On-site Registration table adjacent to the Main Stage. Once your Contestant number is called, your backup will only be judged IF they have been previously added at check-in.
+
+  Are there any restrictions on competing or backing up a contestant?
+
+  When a fiddle contestant is being judged no other fiddles should be played on the stage, whether being judged as backup or not.
+
+  Do I need to fill out a separate form for each entry?
+
+  Yes! It is difficult, and often not clear as to the exact entry request when processing multiple entries on the same form. This situation often arises when an entry form contains both a band entry and an individual entry.
+
+  How many times can I enter?
+
+  Time permitting, a contestant may compete in up to two different instrument categories (see above under What is considered an instrument category?) and also be entered in singing. This does not restrict you from performing in a band. In other words, each entrant may back up others, play in a band, and compete in more than one instrument category if time allows (TWO Registration Forms are required indicating your 1st and 2nd choice for the instrument category).
+
+  A third Registration Form is required if you are also entering the Singing competition (not required if you are also being judged for Singing while competing in an instrument category).
+
+  Anyone may enter the Flatfoot Dancing competition no matter what other categories you compete in, as long as it does not create a timing conflict for you.
+
+  What are the entry fees?
+
+  Each contestant, back-up musician or band member, regardless of age, must pay one $20.00 entry fee which covers ALL appearances. To put it another way, if you have entered in one or more instrument categories, Singing, Flatfoot Dancing and/or you are in a band, your total entry fee will be $20.00, which includes admission.
+
+  Ok, I’m registered as a contestant. What time should I check-in?
+
+  Information as to when and where you are to check in will be provided in your Contestant Letter, which will be mailed approximately 2 weeks before the Contest. Check in well before your scheduled playing time.
+
+  If you have travel or other considerations that restrict the time of day that you can compete, note this on your Registration form.
+
+  While checking in, make sure that your name is spelled correctly, your address is correct and that your backup musicians are properly identified. This will be their last chance to indicate that they are to be judged.
+
+  How do I know if my entry has been accepted?
+
+  You will be notified well in advance of the Contest should your entry be denied. If you sent a check, your check will be returned. Entries are denied when a category becomes "full" or the maximum number of contestants have been pre-registered. If you need to withdraw your entry, please call the hotline at (818) 382-4819 and leave a message for the Registrar. If you have not received your Contestant information by May 9th, email the Registrar@topangabanjofiddle.org or call the hotline at (818) 382-4819
+
+  How much time do I get to compete?
+
+  Instrument categories, Singing and Other Instruments are allotted three (3) minutes. Bands must play two songs consisting of one instrumental and one vocal, both with a banjo or a fiddle, not to exceed a total time of six (6) minutes. Your selections MUST be completed within the specified minutes or judges will deduct ten (10) points and sound will be cut.
+  Be aware that timing begins when you are given the mic, INTRODUCTIONS COUNT!
+
+  The Flatfoot Dancing category is described on it's own page
+
+  What level should I enter: Beginning, Intermediate, or Advanced?
+
+  Except in the Flatfoot Dancing competition, your level should be determined by your expertise, not your age. Please see the "Judging Criteria" page for additional information. Choose your level carefully. If you have won 1st, 2nd or 3rd place, you may not enter at a lower level on that instrument, but you may compete at a lower level on a different instrument. If you have won first place TWO Times at either the beginning or intermediate levels, you MUST enter in the next level.
+
+  What if I’ve selected to compete as a BEGINNER or INTERMEDIATE contestant ?
+
+  Select the Beginning or Intermediate levels carefully based on your level of expertise and remember that you will be competing on the Pavilion Stage (Beginning) or the Railroad Stage (Intermediate). If, in the opinion of the judges, you are clearly not a beginner or Intermediate player, they will bump you up to a higher level. You will at that time be advised where you will continue in the competition. If you are to compete on the Main Stage you will compete at the end of the day after the last prescheduled contestant but before the waiting list. Again, select your level carefully as there may not be enough time for you to compete at the end of the day on the Main Stage.
+
+  What happens if I am bumped up to another level?
+
+  If you are promoted to a level that has a playoff, you will compete on that playoff stage. If you are promoted to a level that requires that you compete on the main stage, you will compete after the last scheduled contestant but before the waiting list, time permitting.
+
+  If I’ve won First Place in the Beginning or Intermediate categories in the past, can I enter at the same level the following year?
+
+  If you have won first place in the beginning or intermediate categories two times, you are required to advance to the next level.
+
+  What type of song or instrumental selection may I perform?
+
+  Any song may be performed but in general, songs should be chosen that will allow the judges to rate your performance and the quality of your playing or singing.
+
+  In the Singing category contestants are judged on Pitch, Enunciation, Sound Quality, Rhythm, Style, Material and Stage Presence.
+
+  Songs should not be profane, rushed or excessively loud.
+
+  Lyrics should be clear and understandable.
+
+  Objectionable material or interpretation will result in performance termination and disqualification.
+
+  May I be judged for Singing while competing in an instrument category?
+
+  Yes, BUT, All Singing contestants must compete in the morning elimination contest to qualify to be judged in Singing on the Main Stage. If your score is at least as high as the lowest-scoring finalist that has entered in Singing only and advanced to the Main Stage, then you may be judged in Singing on the Main Stage while competing in an instrument category.
+
+  Must (or may) I perform the same song on the main stage as I did in the preliminary competition (playoff or sing-off)?
+
+  Bands or individual contestants in any category that requires morning playoffs or sing-offs may perform the same song or a different one.
+
+  Should I inform anyone as to my song selection?
+
+  No notification or approval is required but read the song criteria above.
+
+  May I sing a cappella?
+
+  Singing contestants may be accompanied or sing a cappella.
+
+  May a group enter in Singing?
+
+  Groups may compete in the Singing catgory and will be judged together as one.
+
+  If I’ve entered a Beginning instrument category, where do I compete?
+
+  All beginning-level competition will be held on the Pavilion Stage beginning at 9:30AM. Prizes for 1st, 2nd and 3rd Place will be awarded at the close of the Beginning Stage Competition. The 1st place winners in each of the 5 instrument categories (Traditional Banjo, Fiddle, Mandolin, Bluegrass Banjo and Flat-picking Guitar) will be invited to play a number of their choice on the main stage and will receive a trophy.
+
+  If I’ve entered an Intermediate instrument category or Singing, where do I compete?
+
+  The Intermediate Fiddle playoffs have been combined with other Intermediate categories to create an Intermediate Stage which will be held on the Railroad stage at noon.
+
+  Singing preliminary competition will be "As Required" depending on the number of contestants entered. Your Contestant Confirmation Letter will specify where you are to check-in. The highest scorers (number of finalists to be determined by the number of entries) will be given the opportunity to compete on the Main Stage throughout the remainder of the day. If you are a finalist, you will immediately go to the On-site Registration Table (next to the main stage) to sign up for your new competition time. Do not wait - get over to the On-site Registration Table next to the main stage and get signed up!
+
+  Band Category
+
+  A band is judged on total performance. Individual members of a band are not judged separately. Individual band members may also enter an instrument category and be judged on their individual performance. A band must consist of 3 or more players, including at least one fiddle or banjo used in both selections. Please no beginners or pick-up bands. A Band is allotted six (6) minutes of performance time. Bands must perform two selections consisting of one instrumental and one with vocals, for a combined total time not to exceed 6 minutes. Should the performance exceed the time limit the judges will deduct ten (10) points and sound will be cut.
+
+  ALL Band Contestants will compete in a preliminary competition in the morning. Finalists will be selected to compete on the Main Stage in the AFTERNOON. Once selected they will report to On-Site Registration at the Main Stage where their contestant numbers will be assigned.
+
+  NOTE: A band entry must play the two types of selections on BOTH the Preliminary Stage and the Main Stage if a Finalist. They may perform the same selections or change the selections as desired.
+
+  Should a category become full, is there a waiting list?
+
+  Yes. The Waiting List will be generated the day of the contest at the On-site Registration Table next to the main stage. If have not entered or your entry has been returned but you still want to compete, check in at the On-site Registration table and ask to be placed on the Waiting List. Please note that excluded from the Waiting List are Bands, Intermediate Instruments, Beginning Instruments and Singing, as contestants in these categories have participated in earlier competitions. While there are no guarantees that you will have the opportunity to compete, we will make every attempt to get you into the contest if time permits. Entrants on the waiting list will be advised around 4:00 p.m. to prepare. If called, you will compete after all the pre-registered contestants. Please check at the On-site Registration table for confirmation that you will compete at the end of the day.
+
+  Did you follow all the rules?
+
+  If you do not follow the rules relating to the amount of allotted performance time or competition requirements you will be disqualified and you will be advised of the same.
+
+  If I have more questions, who can I ask?
+
+  Please visit the Judging Criteria page of our web site for a more detailed explanation of the rules. You may also email the contestant registrar at registrar@topangabanjofiddle.org or call the hotline at (818) 382-4819 and leave a detailed message.
+
+  </div>
+</div>
+
+<div class="row" name="judge" id="judge">
+  <div class="col-12">
+    What are the recent changes?
+
+    The most significant are the addition of Flatfoot (Buck) Dancing competition, Online contestant registration and the Intermediate Stage which will host all Intermediate level competition. Winners will play on the main stage after the competition and awards, as the Beginners have in the past.
+  </div>
+</div>
+

@@ -8,6 +8,8 @@ Rails.application.routes.draw do
   get 'vendors/', to: 'vendors#index', as: 'vendors'
 
   get 'contestants/', to: 'contestants#index', as: 'contestants'
+  get 'contestants/register', to: 'contestants#register', as: 'registration'
+  post 'contestants/register', to: 'users#create'
 
   get 'about/', to: 'about#index', as: 'about'
 
